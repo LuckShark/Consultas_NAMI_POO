@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Objects;
+
 public class Consulta {
     private int dia;
     private int mes;
@@ -71,5 +73,18 @@ public class Consulta {
 
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Consulta consulta = (Consulta) o;
+        return dia == consulta.dia && mes == consulta.mes && ano == consulta.ano && hora == consulta.hora;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dia, mes, ano, hora);
     }
 }
