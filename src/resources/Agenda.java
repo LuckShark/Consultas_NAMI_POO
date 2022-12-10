@@ -17,7 +17,7 @@ public class Agenda {
             this.consultas.add(consulta);
             System.out.println("Add sucess");
         } else {
-            throw new ConsultaExceptions("Horário OCUPADO!");
+            throw new ConsultaExceptions("HORÁRIO OCUPADO!");
         }
     }
 
