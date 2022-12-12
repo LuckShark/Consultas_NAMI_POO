@@ -3,15 +3,15 @@ ALUNO: Lucas Araújo Matricula: 2215161
 Última atividade de POO - aplicação para controlar a agenda de um médico do NAMI (UNIFOR).
 
 
-[]0) Se a aplicação for desenvolvida na forma gráfica utilizando a biblioteca javax.swing (2,0 pontos)
-[x]1) Crie a classe Paciente, com seu construtor, getters e setters (0,5 Pontos)
+-[]0) Se a aplicação for desenvolvida na forma gráfica utilizando a biblioteca javax.swing (2,0 pontos)
+-[x]1) Crie a classe Paciente, com seu construtor, getters e setters (0,5 Pontos)
 Paciente
 - Nome: String
 - Sobrenome: String
 - cpf: String
 - telefone: String
 + mostrar()
-[x]2) Crie a Classe Consulta, com seu construtor, getters e setters. Note que o construtor deve iniciar o
+-[x]2) Crie a Classe Consulta, com seu construtor, getters e setters. Note que o construtor deve iniciar o
 atributo Status com o valor 0 (zero) que indica que a consulta esta marcada. (1,0 pontos)
 Consulta
 - paciente: Paciente
@@ -21,7 +21,7 @@ Consulta
 - hora: int
 - status: int
 + mostrar()
-[x]3) Crie a classe Agenda que
+-[x]3) Crie a classe Agenda que
 [x]a) Possua um atributo ArrayList<Consulta> lista; (0,5 pontos)
 [x]b) Implemente o método adicionar que deverá receber como parâmetro uma consulta. Para inserir a
 consulta na lista, o método deve verificar se o dia, mês, ano e hora da consulta estão livres, caso
