@@ -1,7 +1,7 @@
 # Consultas_NAMI_POO
 ALUNO: Lucas Araújo Matricula: 2215161
 Última atividade de POO - aplicação para controlar a agenda de um médico do NAMI (UNIFOR).
-\###STATUS
+
 
 []0) Se a aplicação for desenvolvida na forma gráfica utilizando a biblioteca javax.swing (2,0 pontos)
 [x]1) Crie a classe Paciente, com seu construtor, getters e setters (0,5 Pontos)
