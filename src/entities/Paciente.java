@@ -6,10 +6,6 @@ public class Paciente {
     private String cpf;
     private String telefone;
 
-    public Paciente(){
-
-    }
-
     public Paciente(String nome, String sobrenome, String cpf, String telefone) {
         this.nome = nome;
         this.sobrenome = sobrenome;
@@ -17,8 +13,13 @@ public class Paciente {
         this.telefone = telefone;
     }
 
-    public void mostrar(){
-
+    public String mostrar(){
+        return "Paciente{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", telefone='" + telefone + '\'' +
+                '}';
     }
 
     public String getNome() {
@@ -52,6 +53,7 @@ public class Paciente {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
 
 
 }

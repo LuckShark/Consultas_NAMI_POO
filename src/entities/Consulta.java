@@ -11,8 +11,6 @@ public class Consulta {
 
     private Paciente paciente;
 
-    public Consulta(){
-    }
 
     public Consulta(int dia, int mes, int ano, int hora, Paciente paciente) {
         this.dia = dia;
@@ -23,8 +21,15 @@ public class Consulta {
         this.paciente = paciente;
     }
 
-    public void mostrar(){
-
+    public String mostrar(){
+        return "Consulta{" +
+                "dia=" + dia +
+                ", mes=" + mes +
+                ", ano=" + ano +
+                ", hora=" + hora +
+                ", status=" + status +
+                ", paciente=" + paciente.mostrar() +
+                '}';
     }
 
     public int getDia() {
@@ -87,4 +92,5 @@ public class Consulta {
     public int hashCode() {
         return Objects.hash(dia, mes, ano, hora);
     }
+
 }
